@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // alert("Hello, World!!!")
+            // function hello()
+            // {
+            //     alert("Hello,World!!!");
+            // }
+            //variables
+            //var,let,const
+            // let counter=0;
+            // const PI = 3.14;
+            // function count()
+            // {
+            //     counter++;
+            //     alert(counter);
+            // }
+        //    function hello()
+        //    {
+        //        const header = document.querySelector('h1');
+        //        if(header.innerHTML=='Hello!')
+        //        {
+        //            header.innerHTML="Good Bye!";
+        //        }
+        //        else 
+        //        {
+        //            header.innerHTML="Hello!";
+        //        }
+        //    }
+        // let counter=0; 
+        // function count()
+        // {
+        //     counter++;
+        //     document.querySelector('h1').innerHTML=counter;
+        //     if(counter%10==0)
+        //         alert(`Count now is ${counter}`);
+        // }
+        // document.addEventListener('DOMContentLoaded',function()
+        // {
+            
+        // });
+
+        function 1()
+        {
+            const name = document.querySelector('#name').value;
+                alert(`Hello, ${name}`);
+        }
+        function 2()
+        {
+            document.querySelector('form').onsubmit=1();
+        }
+        
+
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('form').onsubmit=function(){
+                const name = document.querySelector('#name').value;
+                alert(`Hello, ${name}`);
+            };
+        });
+
+        </script>
+    </head>
+    <body>
+        <!-- <h1>0</h1>
+        <button onclick="count()">Click Here</button> -->
+    <form>
+        <input autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+    </body>
+</html>

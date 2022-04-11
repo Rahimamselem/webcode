@@ -1,0 +1,44 @@
+#table1
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.thead1
+{
+    border: 1px solid red;
+    padding: 3px;
+}
+
+a,b{
+
+}
+
+
+td th{
+    border: 1px solid black;
+    padding: 2px;
+}
+/* a>b
+a+b
+[a=b]
+a:b
+a::b */
+/* th{
+    border: 1px solid black;
+    padding: 2px;
+}  */
+
+/*body{
+    background-color: steelblue;
+    margin: 50px 50px 500px 500px;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    font-size: large;
+}
+p {
+    color: aqua;
+}*/
