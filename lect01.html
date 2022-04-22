@@ -41,32 +41,77 @@
             
         // });
 
-        function 1()
-        {
-            const name = document.querySelector('#name').value;
-                alert(`Hello, ${name}`);
-        }
-        function 2()
-        {
-            document.querySelector('form').onsubmit=1();
-        }
+        // function 1()
+        // {
+        //     const name = document.querySelector('#name').value;
+        //         alert(`Hello, ${name}`);
+        // }
+        // function 2()
+        // {
+        //     document.querySelector('form').onsubmit=1();
+        // }
         
 
-        document.addEventListener('DOMContentLoaded',function(){
-            document.querySelector('form').onsubmit=function(){
-                const name = document.querySelector('#name').value;
-                alert(`Hello, ${name}`);
-            };
-        });
+        // document.addEventListener('DOMContentLoaded',function(){
+        //     document.querySelector('form').onsubmit=function(){
+        //         const name = document.querySelector('#name').value;
+        //         alert(`Hello, ${name}`);
+        //     };
+        // });
+
+        if(!localStorage.getItem("counter"))
+        {
+            localStorage.setItem("counter",0);
+        }
+        function count()
+         {
+
+            // let counter = localStorage.getItem("counter");
+            //  counter++;
+            //  document.querySelector('h1').innerHTML=counter;
+            //  localStorage.setItem("counter",counter);
+        }
+
+        //API Application Programming Interface
+
+
+        // let person = {
+        //     first:"Prof.Mohammed",
+        //     last:"Makame"
+        // };
+
+        // console.log(person);
+        // console.log(person.first);
+
+        // {
+        //     "origin":{
+        //         "city":"Zanzibar",
+        //         "code":255
+        //     },
+        //     "destination":{
+        //         "city":"Dubai",
+        //         "code":965
+        //     },
+        //     "duration":12
+        // }
+
+        // document.addEventListener('DOMContentLoaded',function()
+        // {
+            fetch('')
+            .then(response=>response.json())
+            .then(data=>{
+                console.log("Data is: "+data);
+            });
+        // });
 
         </script>
     </head>
     <body>
-        <!-- <h1>0</h1>
-        <button onclick="count()">Click Here</button> -->
-    <form>
+        <h1>0</h1>
+        <button onclick="count()">Click Here</button>
+    <!--<form>
         <input autofocus id="name" placeholder="Name" type="text">
         <input type="submit">
-    </form>
+    </form>-->
     </body>
 </html>
